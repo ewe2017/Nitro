@@ -1,0 +1,130 @@
+header{	
+    height: 142px;
+}
+section { 	
+	width: 465px;
+    height: 450px;
+    &.one{
+		float: left;
+		margin: 68px 0 0 44px}
+	&.two{
+	float: right;
+    margin: 69px 23px 2px 0px;
+    position: relative;
+    left: 8px;}}
+    
+	.one a {
+	clear: both;
+	font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    left: 4px;
+    top: 90px;
+}
+.two button{    position: relative;
+    width: 98px;
+    height: 37px;
+    top: 3px;
+    left: 33px;}
+
+
+form div { 
+	margin-bottom: 21px; 
+}
+
+label.field {
+	display: block;
+    float: left;
+    width: 200px;
+    font-size: 13px;
+    margin-right: 15px;
+    text-align: left;
+    color: #575656;
+}
+
+.footer-2{
+    position: relative;
+    width: 120px;
+    left: 320px;
+    bottom: 89px;
+}
+.footer-3{
+    position: relative;
+    width: 110px;
+    left: 472px;
+    bottom: 349px;
+}
+.footer-4{
+    position: relative;
+    width: 100px;
+    left: 606px;
+    bottom: 510px;
+}
+.footer-5{
+    position: relative;
+    width: 190px;
+    left: 719px;
+    bottom: 645px;;
+}
+.title { position: relative;
+    bottom: 6px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  font-size: 11px;
+  position: relative;
+  right: 5px;}
+/* Firefox 19+ */
+::-moz-placeholder{ 
+  font-size: 11px;
+  position: relative;
+  right: 5px; }
+/* IE 10+ */
+:-ms-input-placeholder{
+  font-size: 11px;
+  position: relative;
+  right: 5px;}
+/* Firefox 18- */
+:-moz-placeholder{
+  font-size: 11px;
+  position: relative;
+  right: 5px;}
+
+.enter::-webkit-input-placeholder {
+	position: relative;
+  	right: 27px; }
+
+.enter::-moz-placeholder{
+	position: relative;
+  	right: 27px;} 
+.enter:-ms-input-placeholder{
+	position: relative;
+  	right: 27px;}
+.enter:-moz-placeholder{
+	position: relative;
+  	right: 27px;}
+
+input[type="number"]::-webkit-input-placeholder{
+	position: relative;
+	left: 7px;
+	bottom: 1px;
+}
+input[type="number"]::-moz-placeholder{
+	position: relative;
+	left: 7px;
+	bottom: 1px;
+}
+input[type="number"]:-ms-input-placeholder{
+	position: relative;
+	left: 7px;
+	bottom: 1px;
+}
+input[type="number"]:-moz-placeholder{
+	position: relative;
+	left: 7px;
+	bottom: 1px;
+}
+

@@ -1,0 +1,62 @@
+
+<div class="container">
+  <form action="/form-processing-script" method="post">
+    <h1>GIFT VOUCHERS</h1>
+    <p>This is a FIFTY pound voucher that can be used for almost anything on Nitro Digital - exept Gift Vouchers or Subscriptions plans.</p>
+    <section class="one">
+      <div>
+        <label class="required field lfrom" for="form">From:</label>
+        <input class="input from" type="text" nme="from" maxlength="50" required="required" placeholder="YOUR NAME HERE"/>
+      </div>
+      <div>
+        <label class="required field lemail" for="email">Your email address:</label>
+        <input class="input email" type="email" name="email" maxlength="100" required="required" placeholder="YOUR EMAIL ADDRESS HERE"/>
+      </div>
+      <div>
+        <label class="required field lto" for="to">To:</label>
+        <input class="input to" type="text" name="to" maxlength="100" required="required" placeholder="RECIPIENT'S NAME HERE"/>
+      </div>
+      <div>
+        <label class="required field laddres" for="address">Recipient’s  email  address:</label>
+        <input class="input address" type="email" name="address" maxlength="100" required="required" placeholder="RECIPIENT'S EMAIL ADDRESS HERE"/>
+      </div><a href="">FAQs about our Gift Vouchers</a>
+    </section>
+    <section class="two">
+      <div>
+        <label class="required field lvoucher" for="voucher">Voucher Amount:</label>
+        <select class="styled" required="required">
+          <option>&pound10</option>
+          <option>&pound20</option>
+          <option>&pound30</option>
+          <option>&pound40</option>
+          <option selected="selected">&pound50</option>
+          <option>&pound60</option>
+          <option>&pound70</option>
+          <option>&pound80</option>
+          <option>&pound90</option>
+          <option onclick="alert('This voucher is not available');">&pound100</option>
+        </select>
+      </div>
+      <div class="oor">
+        <p class="send">Send:</p>
+        <input type="radio" id="r1" name="rr"/>
+        <label class="now1" for="r1"><span class="r1"></span> Now</label><span class="or">-OR-</span>
+        <input type="radio" id="r2" name="rr"/>
+        <label class="r2" for="r2"><span class='choose'></span> Choose date:</label>
+        <input class="number" type="number" maxlength="2" size="2" placeholder="DD"/>
+        <input class="number" type="number" maxlength="2" size="2" placeholder="MM"/>
+        <input class="number" type="number" maxlength="4" size="2" placeholder="YY"/><img src="images/dd.png" alt="Calendar"/>
+      </div>
+      <div>
+        <label class="field lmessage" for="message"></label>
+        <textarea class="input" name="message"> Hi Frank, 
+Thinking of you with this voucher. 
+Have fun! From Dave</textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" name="submit" value="BUY GIFT VOUCHER" onsubmit="clean();"/>
+        <button>PREVIEW</button>
+      </div>
+    </section>
+  </form>
+</div>

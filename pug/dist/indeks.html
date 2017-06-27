@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Cotent-Type"/>
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Voucher</title>
+    <link rel="stylesheet" type="text/css" href="sass/stylesheets/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="sass/stylesheets/styles.selectBox.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+    <style>input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:17px;
+    height:16px;
+    vertical-align:middle;
+    background:url('images/ja.png') no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px top no-repeat;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="left">
+        <li class="you">Your Crate (1)</li>
+        <li class="wishlist">Wishlist (2)</li>
+        <li class="account">Account</li>
+        <li class="newsletter">Newsletter</li>
+        <li class="worldwide">Worldwide Shipping</li>
+      </ul>
+      <ul class="menu">
+        <li><a class="releases" href="">
+            <nobr>NEW RELEASES</nobr></a></li>
+        <li><a class="preorders" href="">
+            <nobr>PRE-ORDERS</nobr></a></li>
+        <li><a class="bestsellers" href="">BESTSELLERS</a></li>
+        <li><a class="features" href="">FEATURES</a></li>
+        <li><a class="merchandise" href="">MERCHANDISE</a></li>
+        <li><a class="genres" href="">GENRES</a></li>
+        <li><a class="labels" href="">LABELS</a></li>
+        <li><a class="sale" href="">SALE</a></li>
+        <li class="search">
+          <input class="enter" type="search" placeholder="SEARCH">
+        </li>
+        <li class="search">
+          <input class="enter" type="submit" value="SEARCH">
+        </li>
+      </ul>
+      <nav>
+        <ul>
+          <li><a class="books" href="">
+              <nobr>BOOKS AND MAGS</nobr></a></li>
+          <li><a class="clothing" href="">CLOTHING</a></li>
+          <li><a class="film" href="">FILM</a></li>
+          <li><a class="equpment" href="">EQUPMENT</a></li>
+          <li><a class="gift" href="">
+              <nobr>GIFT VOUCHERS</nobr></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <form action="/form-processing-script" method="post">
+        <h1>GIFT VOUCHERS</h1>
+        <p>This is a FIFTY pound voucher that can be used for almost anything on Nitro Digital - exept Gift Vouchers or Subscriptions plans.</p>
+        <section class="one">
+          <div>
+            <label class="required field lfrom" for="form">From:</label>
+            <input class="input from" type="text" nme="from" maxlength="50" required placeholder="YOUR NAME HERE">
+          </div>
+          <div>
+            <label class="required field lemail" for="email">Your email address:</label>
+            <input class="input email" type="email" name="email" maxlength="100" required placeholder="YOUR EMAIL ADDRESS HERE">
+          </div>
+          <div>
+            <label class="required field lto" for="to">To:</label>
+            <input class="input to" type="text" name="to" maxlength="100" required placeholder="RECIPIENT'S NAME HERE">
+          </div>
+          <div>
+            <label class="required field laddres" for="address">Recipient’s  email  address:</label>
+            <input class="input address" type="email" name="address" maxlength="100" required placeholder="RECIPIENT'S EMAIL ADDRESS HERE">
+          </div><a href="">FAQs about our Gift Vouchers</a>
+        </section>
+        <section class="two">
+          <div>
+            <label class="required field lvoucher" for="voucher">Voucher Amount:</label>
+            <select class="styled" required>
+              <option>&pound10</option>
+              <option>&pound20</option>
+              <option>&pound30</option>
+              <option>&pound40</option>
+              <option selected>&pound50</option>
+              <option>&pound60</option>
+              <option>&pound70</option>
+              <option>&pound80</option>
+              <option>&pound90</option>
+              <option onclick="alert('This voucher is not available');">&pound100</option>
+            </select>
+          </div>
+          <div class="oor">
+            <p class="send">Send:</p>
+            <input type="radio" id="r1" name="rr">
+            <label class="now1" for="r1"><span class="r1"></span> Now</label><span class="or">-OR-</span>
+            <input type="radio" id="r2" name="rr">
+            <label class="r2" for="r2"><span class='choose'></span> Choose date:</label>
+            <input class="number" type="number" maxlength="2" size="2" placeholder="DD">
+            <input class="number" type="number" maxlength="2" size="2" placeholder="MM">
+            <input class="number" type="number" maxlength="4" size="2" placeholder="YY"><img src="images/dd.png" alt="Calendar">
+          </div>
+          <div>
+            <label class="field lmessage" for="message">Message:</label>
+            <textarea class="input" name="message"> Hi Frank, 
+Thinking of you with this voucher. 
+Have fun! From Dave</textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" name="submit" value="BUY GIFT VOUCHER" onsubmit="clean();">
+            <button>PREVIEW</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-1">
+          <label for="newsletter">Sign up to our Newsletter</label>
+          <input type="email" name="newsletter" placeholder="EMAIL ADDRESS" size="23">
+          <input type="submit" name="newsletter" value="SIGN UP">
+          <p class="follow">Follow us</p><a href="https://www.facebook.com/"><img src="images/f.png" alt="facebook"></a><a href="https://twitter.com/BonVoyagePL"><img src="images/t.png" alt="twitter"></a><a href="https://www.instagram.com/"><img src="images/fg.png" alt="instagram"></a><a href="https://pl.pinterest.com/"><img src="images/p.png" alt="pinterest"></a>
+        </div>
+        <div class="footer-2">
+          <ul>
+            <li class="title">Navigation</li>
+            <li> New Releases</li>
+            <li>Pre-Orders</li>
+            <li>Bestsellers</li>
+            <li>Features</li>
+            <li>Merchandise</li>
+            <li>Genres</li>
+            <li>Labels</li>
+            <li>Sales</li>
+          </ul>
+        </div>
+        <div class="footer-3">
+          <ul>
+            <li class="title">Service</li>
+            <li>Shoping Info</li>
+            <li>FAQs</li>
+            <li>Help&amp;Support</li>
+            <li>Contactus</li>
+          </ul>
+        </div>
+        <div class="footer-4">
+          <ul>
+            <li class="title">Company</li>
+            <li>About Us</li>
+            <li>Newsletter</li>
+            <li>Gift Voucher</li>
+          </ul>
+        </div>
+        <div class="footer-5">
+          <ul>
+            <li class="title">Contact Nitro Digital</li>
+            <li>Nitro Digital</li>
+            <li>Second Floor, Exbud Building</li>
+            <li>al Solidarnosci 34</li>
+            <li>Kielce, Kielce</li>
+            <li>Tel: +41 (0) 123 456 7890</li>
+            <li>contact@nitro-digital.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-6">
+        <ul>
+          <li class="copyright">Copyright &copy; 2015 Nitro Digital Ltd.</li>
+          <li class="privacy">Privacy and Legal</li>
+          <li class="terms">Terms &amp; Conditions</li>
+          <li class="secure">Secure Payments</li>
+          <li class="visa"><img src="images/1.png" alt="visa"></li>
+          <li class="visa"><img src="images/2.png" alt="american express"></li>
+          <li class="visa"><img src="images/3.png" alt="MasterCard"></li>
+          <li class="visa"><img src="images/4.png" alt="Maestro"></li>
+          <li class="visa"><img class="pay" src="images/5.png" alt="PayPal"></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery.customSelect-master/jquery.customSelect.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

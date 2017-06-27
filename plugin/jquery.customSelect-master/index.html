@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Style Select Boxes Using jQuery + CSS</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jquery.customSelect.js"></script>
+<script type="text/javascript">
+$(function(){
+
+$('select.styled').customSelect();
+
+});
+</script>
+<style type="text/css">
+body {
+	font-family:Arial, Helvetica, sans-serif
+}
+.customSelect {
+	font-size:11px;
+	background-color: #f5f0de;
+	color:#7c7c7c;
+  height: 15px;
+	border:none;
+}
+.customSelect.changed {
+	background-color: #f0dea4;
+}
+.customSelectInner {
+	background:url(customSelect-arrow.gif) no-repeat center right;
+}
+</style>
+</head>
+
+<body>
+<label>Unstyled:</label>
+<select>
+  <option>one</option>
+  <option>two</option>
+  <option>something</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<label>Styled:</label>
+<select class="styled">
+  <option>one</option>
+  <option>two</option>
+  <option>something</option>
+  <option>4</option>
+  <option onclick="alert('This voucher is not available');">5</option>
+</select>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+div(class='container')
+ form(action ='/form-processing-script' method='post')
+  h1 GIFT VOUCHERS
+  p This is a FIFTY pound voucher that can be used for almost anything on Nitro Digital - exept Gift Vouchers or Subscriptions plans.
+  section(class='one')
+   div
+    label(class='required field lfrom' for='form') From:
+    input(class='input from' type='text' nme='from' maxlength='50' required placeholder='YOUR NAME HERE')
+   div
+    label(class='required field lemail' for='email') Your email address:
+    input(class='input email' type='email' name='email' maxlength='100' required placeholder='YOUR EMAIL ADDRESS HERE')
+   div
+    label(class='required field lto' for='to') To:
+    input(class='input to' type='text' name='to' maxlength='100' required placeholder="RECIPIENT'S NAME HERE")
+   div
+    label(class='required field laddres' for='address') Recipient’s  email  address:
+    input(class='input address' type='email' name='address' maxlength='100' required placeholder="RECIPIENT'S EMAIL ADDRESS HERE")
+   a(href='') FAQs about our Gift Vouchers
+  section(class='two')
+   div
+    label(class="required field lvoucher" for="voucher") Voucher Amount:
+    select(class="styled" required)
+     option &pound10
+     option &pound20
+     option &pound30
+     option &pound40
+     option(selected) &pound50
+     option &pound60
+     option &pound70
+     option &pound80
+     option &pound90
+     option(onclick="alert('This voucher is not available');") &pound100
+   div(class='oor')
+    p(class='send') Send:
+    input(type='radio' id='r1' name='rr')
+    label(for='r1' class='now1') <span class="r1"></span> Now
+    span(class='or') -OR-
+    input(type='radio' id='r2' name='rr')
+    label(for='r2' class='r2') <span class='choose'></span> Choose date:
+    input(class="number" type="number" maxlength="2" size="2" placeholder="DD")
+    input(class="number" type="number" maxlength="2" size="2" placeholder="MM")
+    input(class="number" type="number" maxlength="4" size="2" placeholder="YY")
+    img(src='images/dd.png' alt='Calendar')
+   div
+    label(class="field lmessage" for="message")
+    textarea(class="input" name="message") 
+     |Hi Frank, 
+     |Thinking of you with this voucher. 
+     |Have fun! From Dave
+   div(class="submit")
+    input(type="submit" name="submit" value="BUY GIFT VOUCHER" onsubmit="clean();")
+    button PREVIEW

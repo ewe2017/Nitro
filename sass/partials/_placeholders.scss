@@ -1,0 +1,30 @@
+%clearfix{
+	@include clearfix;
+}
+
+header{
+	@extend %clearfix;
+}
+.left {
+	@extend %clearfix;
+}
+.menu{
+	@extend %clearfix;
+}
+nav{
+	@extend %clearfix;
+}
+.container{
+	@extend %clearfix;
+}
+.two{
+	div{
+	@extend %clearfix;
+	}
+}
+.or {
+	@extend %clearfix;
+}
+.footer-1{
+	@extend %clearfix;
+}
